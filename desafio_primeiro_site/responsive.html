@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+
+            min-width: 280;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, in autem aliquam tempore consequuntur expedita dolorum animi qui ipsa eaque quasi, assumenda corporis aspernatur sapiente. Commodi maiores beatae incidunt doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quidem debitis qui exercitationem tempore obcaecati, corporis ipsam ad, neque perferendis magnam laboriosam rem. Eligendi repellat consequatur quod odio? Ex, dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem minus hic facilis voluptatem maiores autem earum repellat nulla sapiente vero, tempora commodi? Magni necessitatibus fuga asperiores laudantium illo voluptate.</p>
+        <picture>
+            <source media="(min-width:600px )" srcset="images/hubble_telescope.png"> <!-- O ideal aqui é utilizar uma versão da foto da tag img recortada em um formato menor, acontecendo uma transição -->
+            <img src="images/hubble_telescope.png" alt="Imagem do Hubble">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, in autem aliquam tempore consequuntur expedita dolorum animi qui ipsa eaque quasi, assumenda corporis aspernatur sapiente. Commodi maiores beatae incidunt doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quidem debitis qui exercitationem tempore obcaecati, corporis ipsam ad, neque perferendis magnam laboriosam rem. Eligendi repellat consequatur quod odio? Ex, dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem minus hic facilis voluptatem maiores autem earum repellat nulla sapiente vero, tempora commodi? Magni necessitatibus fuga asperiores laudantium illo voluptate.</p>
+    </main>
+</body>
+</html>
