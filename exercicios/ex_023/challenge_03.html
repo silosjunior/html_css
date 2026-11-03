@@ -16,9 +16,17 @@
             text-align: center;
         }
 
-        th {
+        th,
+        .media_por_area {
             color: white;
             background-color: gray;
+            font-weight: bolder;
+        }
+
+        .area {
+            color: black;
+            background-color: transparent;
+            font-weight: bold;
         }
 
         th, td {
@@ -31,24 +39,26 @@
     <h1>Challenge 3 - Tabelas Semânticas</h1>
     <table>
         <thead>
-            <th scope="" rowspan="2" >Área</th>
-            <th scope="" >Disciplinas</th>
-            <th scope="" colspan="2" >Notas</th>
-            <th scope="">Média</th>
+            <tr>
+                <th scope="col" rowspan="2" >Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2" >Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
         </thead>
-        <thead>
-            <td>1</td>
-            <td>2</td>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
-            <td>3</td>
-        </thead>
+
         <tbody>
-            <th scope="" rowspan="4" >Exatas</th>
-            <td>Matemática</td>
-            <td>0.0</td>
-            <td>0.0</td>
-            <td>0.0</td>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="area">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
             <tr>
                 <td>Física</td>
                 <td>0.0</td>
@@ -68,11 +78,12 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th scope="" colspan="4">Média de Exatas</th>
-                <td>0.0</td>
+                <th
+                 scope="row" colspan="4">Média de Exatas</th>
+                <td class="media_por_area">0.0</td>
             </tr>
             <tr>
-                <th scope="" rowspan="2">Humanas</th>
+                <th scope="rowgroup" rowspan="2" class="area" >Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -85,8 +96,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th scope="" colspan="4">Média de Humanas</th>
-                <td>0.0</td>
+                <th scope="row" colspan="4">Média de Humanas</th>
+                <td class="media_por_area">0.0</td>
             </tr>
         </tbody>
     </table>
