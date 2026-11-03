@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+@font-face {
+    font-family: 'Cinzel Decorative';
+    src: url('../fonts/cinzel-decorative-bold.otf') format('opentype');
+    font-weight: bolder;
+    font-display: swap;
+}
+
+:root {
+    --standard-font: 'Carattere', cursive;
+    --font-00: 'Cinzel Decorative', sans-serif;
+    --alternative-font: Arial, Verdana, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-width: 300px;
+    max-width: 2000px;
+    min-height: 100vw;
+    background-color: azure;
+    font-family: var(--standard-font);
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.728), white);
+    font-family: var(--font-00);
+    color: rgb(17, 13, 13);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    color: black;
+    font-size: 7.5vh;
+}
+
+header > p {
+    color: black;
+    padding-bottom: 50px;
+}
+
+header > p > a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+body {
+    min-height: 100vh;
+    margin: auto;
+    background-color: white;
+    font-family: var(--alternative-font);
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--standard-font);
+    font-size: 5vh;
+}
+
+section.text {
+    background-color: var(--cor-1);
+    color: black;
+}
+
+section.background {
+    color: black;
+    text-shadow: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*section.background > p {
+    width: auto;
+}*/
+
+section.background#nautilus > p {
+    color: #423e54;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #908ea86a;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#nautilus {
+    background-image: url('../images/nautilus.png');
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+}
+
+section.background#human-nature {
+    color: white;
+    text-shadow: black;
+}
+
+section.background#human-nature > p {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(7, 61, 7, 0.5);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#human-nature {
+    background-image: url(../images/human-nature.png);
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p > a {
+    color: white;
+    text-decoration: none;
+}
