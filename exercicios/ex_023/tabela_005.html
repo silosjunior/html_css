@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: aqua;
+        }
+
+        col.cnome {
+            background-color: aquamarine;
+        }
+
+        col.cgrupo {
+            background-color: yellow;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>José Menezes</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>        
+            <td>Zach Junior</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Médico</td>
+        </tr>        
+            <td>Ana Clara Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Farmacêutica</td>
+        </tr>       
+            <td>Maria Clara</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Pediatra</td>
+        </tr>
+    </table>
+</body>
+</html>
