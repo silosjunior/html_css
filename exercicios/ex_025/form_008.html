@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off"></form>
+    <p>
+        <label for="i_num_1">Número 1:</label>
+        <input type="number" name="num_1" id="i_num_1" min="0" max="50" required oninput="i_soma.innerHTML = Number(i_num_1.value) + Number(i_num_2.value)">
+    </p>
+
+    <p>
+        <label for="i_num_2">Número 2:</label>
+        <input type="number" name="num_2" id="i_num_2" min="0" max="50" required oninput="i_soma.innerHTML = Number(i_num_1.value) + Number(i_num_2.value)">
+    </p>
+
+    <p>
+        <label for="i_soma">Soma:</label>
+        <output name="soma" id="i_soma">0</output>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
