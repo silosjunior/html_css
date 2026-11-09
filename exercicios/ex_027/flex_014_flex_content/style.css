@@ -10,7 +10,13 @@ header, section.text_content {
     padding: 20px;
 }
 
-h1, h2, p {
+h1, h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+p {
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -24,4 +30,40 @@ body {
 section.flex_content {
     background-color: #C2C4C3;
     padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 0 400px;
+}
+
+article.text_media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.media_text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
