@@ -20,15 +20,41 @@ header {
     padding: 10px;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.201);
 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 header > h1 {
     border: 1px dotted red;
+    flex: 0 0 200px;
 
 }
 
 header > nav {
     border: 1px dotted red;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    color: white;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 
 main {
