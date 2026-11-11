@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 * {
+    box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -15,7 +17,8 @@
     grid-template-rows: 2fr 1fr 6fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 5px;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
     padding: 2px;
     border: 2px solid black;
     }
