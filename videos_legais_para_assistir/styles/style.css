@@ -19,19 +19,20 @@ header {
 
 
 
-ul {
+.container {
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
     margin: auto;
     padding: 10px;
-    align-items: center;
     border: 5px solid blue;
     list-style: none;
     gap: 5px;
 }
 
-li.left {
+.item {
+    width: 336px;
+    height: 188px;
     border: 5px solid green;
-    grid-row-start: auto ;
-    padding: auto;
+
+
 }
